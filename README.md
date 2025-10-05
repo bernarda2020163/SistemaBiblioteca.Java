@@ -5,20 +5,51 @@
 
 📌 Requisitos:
 
-* Estructura de Clases (POO)
+El repositorio de GitHub SistemaBiblioteca.Java contiene un Sistema de Gestión de Biblioteca simple desarrollado en Java, utilizando los principios de la Programación Orientada a Objetos (POO) y manejo de excepciones personalizadas.
 
-* Clase Libro. Atributos: titulo (String), autor (String), añoPublicacion (int). Métodos: Constructor, getters/setters y mostrarInfo().
-* Clase LibroDigital: Hereda Libro y añade atributo formato (String). Sobrescribe mostrarInfo() para incluir el formato.
-* Clase Biblioteca: Lista de libros (List<Libro>).
-Métodos:
-agregarLibro(Libro libro), buscarLibro(String titulo): Lanza
-LibroNoEncontradoException si no existe.
-* Excepción Personalizada: LibroNoEncontradoException (extiende Exception).
-  
-💼 Funcionalidades Obligatorias: 
-* Crear al menos 2 libros (1 normal y 1 digital).
-* Agregarlos a la biblioteca.
-* Buscar un libro por título: Si no existe, capturar la * excepción y mostrar un mensaje claro
+Las funcionalidades y la estructura del programa son las siguientes:
+
+* Estructura de Clases (POO)
+El sistema se organiza en las siguientes clases para modelar los componentes de una biblioteca:
+
+#### Clase Libro
+
+*  Atributos: titulo (String), autor (String), añoPublicacion (int).
+
+*  Métodos: Constructor, getters y setters, y mostrarInfo() para mostrar los detalles del libro.
+
+#### Clase LibroDigital
+
+* Herencia: Hereda de la clase Libro.
+
+* Atributo Adicional: formato (String).
+
+* Métodos: Sobrescribe el método mostrarInfo() para incluir la información del formato digital.
+
+#### Clase Biblioteca
+
+* Atributo: Una lista de libros (List<Libro>) para almacenar el inventario.
+
+* Métodos Clave:
+
+* agregarLibro(Libro libro): Añade un libro (físico o digital) a la lista de la biblioteca.
+
+* buscarLibro(String titulo): Busca un libro por su título.
+
+* Excepción Personalizada LibroNoEncontradoException
+
+* Una excepción que extiende de Exception para ser lanzada específicamente cuando un libro solicitado no se encuentra en la biblioteca.
+
+💼 Funcionalidades Obligatorias del Programa
+El sistema está diseñado para realizar las siguientes operaciones mínimas de gestión:
+
+* Creación de Libros	Permite crear al menos dos tipos de libros: uno normal (Libro) y uno digital (LibroDigital).
+* Gestión de Inventario	La clase Biblioteca permite agregar estos libros a su lista de inventario.
+* Búsqueda de Libros	Implementa la función de buscar un libro por su título.
+* Manejo de Errores	Si el libro buscado no existe, el método buscarLibro lanza la excepción LibroNoEncontradoException. El programa principal debe capturar esta excepción y mostrar un mensaje claro al usuario (ej: "Libro no encontrado").
+
+Este proyecto educativo esta enfocado en aplicar conceptos básicos y esenciales de Java como POO (herencia, encapsulamiento) y manejo avanzado de excepciones para simular la gestión de un pequeño inventario bibliotecario.
+
 
  📖 Documentación web: 
 

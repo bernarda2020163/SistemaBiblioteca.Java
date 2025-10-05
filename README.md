@@ -40,7 +40,7 @@ El sistema se organiza en las siguientes clases para modelar los componentes de 
 
 * Una excepción que extiende de Exception para ser lanzada específicamente cuando un libro solicitado no se encuentra en la biblioteca.
 
-💼 Funcionalidades Obligatorias del Programa
+💼 ### Funcionalidades Obligatorias del Programa
 El sistema está diseñado para realizar las siguientes operaciones mínimas de gestión:
 
 * Creación de Libros	Permite crear al menos dos tipos de libros: uno normal (Libro) y uno digital (LibroDigital).
@@ -49,6 +49,12 @@ El sistema está diseñado para realizar las siguientes operaciones mínimas de 
 * Manejo de Errores	Si el libro buscado no existe, el método buscarLibro lanza la excepción LibroNoEncontradoException. El programa principal debe capturar esta excepción y mostrar un mensaje claro al usuario (ej: "Libro no encontrado").
 
 Este proyecto educativo esta enfocado en aplicar conceptos básicos y esenciales de Java como POO (herencia, encapsulamiento) y manejo avanzado de excepciones para simular la gestión de un pequeño inventario bibliotecario.
+
+### USO :
+
+1 ) Ejecutar la clase Main.java.
+2) Inteactuar con el menú del Sistema de biblioteca. (agregarlibros, buscarlibros por titulo, revisar catalogo de libros , salir) 
+3) Validación de datos mediante excepciones personalizadas.
 
 
  📖 Documentación web: 

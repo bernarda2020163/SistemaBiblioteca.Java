@@ -1,6 +1,7 @@
-PROYECTO TAREA 5 : SISTEMA DE BIBLIOTECA 
-Desarrollado por  Valentina Cartagena , Romina Parra y Bernarda Rodríguez.
-Desarrollar un sistema de gestión de biblioteca en Java.
+## PROYECTO TAREA 5 : SISTEMA DE BIBLIOTECA 
+
+### Desarrollado por  Valentina Cartagena , Romina Parra y Bernarda Rodríguez.
+### Desarrollar un sistema de gestión de biblioteca en Java.
 
 📌 Requisitos:
 * Estructura de Clases (POO)
@@ -14,8 +15,8 @@ LibroNoEncontradoException si no existe.
 * Excepción Personalizada: LibroNoEncontradoException (extiende Exception).
   
 __Funcionalidades Obligatorias_
-Crear al menos 2 libros (1 normal y 1 digital).
-Agregarlos a la biblioteca.
-Buscar un libro por título: Si no existe, capturar la
-excepción y mostrar un mensaje claro
+* Crear al menos 2 libros (1 normal y 1 digital).
+* Agregarlos a la biblioteca.
+* Buscar un libro por título: Si no existe, capturar la
+* excepción y mostrar un mensaje claro
 

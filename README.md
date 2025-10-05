@@ -52,8 +52,10 @@ Este proyecto educativo esta enfocado en aplicar conceptos básicos y esenciales
 
 ### USO :
 
-1 ) Ejecutar la clase Main.java.
-2) Inteactuar con el menú del Sistema de biblioteca. (agregarlibros, buscarlibros por titulo, revisar catalogo de libros , salir) 
+1) Ejecutar la clase Main.java.
+   
+2)  Inteactuar con el menú del Sistema de biblioteca. (agregarlibros, buscarlibros por titulo, revisar catalogo de libros , salir)
+   
 3) Validación de datos mediante excepciones personalizadas.
 
 

@@ -15,8 +15,13 @@ agregarLibro(Libro libro), buscarLibro(String titulo): Lanza
 LibroNoEncontradoException si no existe.
 * Excepción Personalizada: LibroNoEncontradoException (extiende Exception).
   
-📌 Funcionalidades Obligatorias: 
+💼 Funcionalidades Obligatorias: 
 * Crear al menos 2 libros (1 normal y 1 digital).
 * Agregarlos a la biblioteca.
 * Buscar un libro por título: Si no existe, capturar la * excepción y mostrar un mensaje claro
+
+ 📖 Documentación web: 
+
+* api libros : https://isbndb.com/isbndb-api-documentation-v2
+* Estructura del ISBN: https://camaradellibro.cl/estructura-isbn/
 

@@ -40,7 +40,7 @@ El sistema se organiza en las siguientes clases para modelar los componentes de 
 
 * Una excepción que extiende de Exception para ser lanzada específicamente cuando un libro solicitado no se encuentra en la biblioteca.
 
-💼 ### Funcionalidades Obligatorias del Programa
+ ### Funcionalidades Obligatorias del Programa 💼
 El sistema está diseñado para realizar las siguientes operaciones mínimas de gestión:
 
 * Creación de Libros	Permite crear al menos dos tipos de libros: uno normal (Libro) y uno digital (LibroDigital).

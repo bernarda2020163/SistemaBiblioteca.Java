@@ -4,6 +4,7 @@
 ### Desarrollar un sistema de gestión de biblioteca en Java.
 
 📌 Requisitos:
+
 * Estructura de Clases (POO)
 
 * Clase Libro. Atributos: titulo (String), autor (String), añoPublicacion (int). Métodos: Constructor, getters/setters y mostrarInfo().
@@ -14,7 +15,7 @@ agregarLibro(Libro libro), buscarLibro(String titulo): Lanza
 LibroNoEncontradoException si no existe.
 * Excepción Personalizada: LibroNoEncontradoException (extiende Exception).
   
-__Funcionalidades Obligatorias_
+📌 Funcionalidades Obligatorias_
 * Crear al menos 2 libros (1 normal y 1 digital).
 * Agregarlos a la biblioteca.
 * Buscar un libro por título: Si no existe, capturar la

@@ -83,7 +83,6 @@ Se crean y agregan cuatro libros predefinidos (Sobredosis, Vida Sin Límites, Ci
 
 ==== BIENVENIDO AL SISTEMA DE BIBLIOTECA ====
 
-
 --- Agregando libros a la Biblioteca ---
 El libro ha sido agregado: SOBREDOSIS  
 El libro ha sido agregado: VIDA SIN LIMITES  
@@ -91,13 +90,13 @@ El libro ha sido agregado: CIEN AÑOS DE SOLEDAD
 El libro ha sido agregado: EL CÓDIGO DA VINCI   
 
 -------- SISTEMA DE BIBLIOTECA ----------
-[1] Añadir libro
-[2] Mostrar libros disponibles
-[3] Buscar libro
-[4] Salir de la biblioteca
-> Ingrese una opción:
+[1] Añadir libro  
+[2] Mostrar libros disponibles  
+[3] Buscar libro  
+[4] Salir de la biblioteca  
+> Ingrese una opción:  
 
-__2) Opción 2 Mostrar libros disponibles__:
+__2) Opción 2: Mostrar libros disponibles__:
 
 El usuario ingresa 2 para ver el inventario.
 
@@ -107,41 +106,41 @@ El usuario ingresa 2 para ver el inventario.
 
 --- Libros en la Biblioteca (4) ---
 
-Libro Libro: 
-ISBN: 9569961848 
-TITULO: SOBREDOSIS 
-AUTOR: ALBERTO FUGUET 
-AÑO DE PUBLICACION: 1990
+Libro Libro:   
+ISBN: 9569961848   
+TITULO: SOBREDOSIS   
+AUTOR: ALBERTO FUGUET   
+AÑO DE PUBLICACION: 1990  
 
-Libro LibroDigital: 
-ISBN: 9780307589750 
-TITULO: VIDA SIN LIMITES 
-AUTOR: NICK VUJICIC 
-AÑO DE PUBLICACION: 2010
-FORMATO DIGITAL: epub
+Libro LibroDigital:   
+ISBN: 9780307589750   
+TITULO: VIDA SIN LIMITES   
+AUTOR: NICK VUJICIC   
+AÑO DE PUBLICACION: 2010  
+FORMATO DIGITAL: epub  
 
-Libro Libro: 
-ISBN: 9789968411226  
-TITULO: CIEN AÑOS DE SOLEDAD 
-AUTOR: GABRIEL GARCÍA MÁRQUEZ 
-AÑO DE PUBLICACION: 1967
+Libro Libro:   
+ISBN: 9789968411226    
+TITULO: CIEN AÑOS DE SOLEDAD   
+AUTOR: GABRIEL GARCÍA MÁRQUEZ   
+AÑO DE PUBLICACION: 1967  
 
-Libro LibroDigital: 
-ISBN: 8482398725 
-TITULO: EL CÓDIGO DA VINCI 
-AUTOR: DAN BROWN 
-AÑO DE PUBLICACION: 2003
-FORMATO DIGITAL: PDF
+Libro LibroDigital:   
+ISBN: 8482398725   
+TITULO: EL CÓDIGO DA VINCI   
+AUTOR: DAN BROWN   
+AÑO DE PUBLICACION: 2003  
+FORMATO DIGITAL: PDF  
 
 
 -------- SISTEMA DE BIBLIOTECA ----------
-[1] Añadir libro
-[2] Mostrar libros disponibles
-[3] Buscar libro
-[4] Salir de la biblioteca
-> Ingrese una opción:
+[1] Añadir libro  
+[2] Mostrar libros disponibles  
+[3] Buscar libro  
+[4] Salir de la biblioteca  
+> Ingrese una opción:  
 
-#### 3) Opción 3: Buscar libro (Búsqueda exitosa)
+__3) Opción 3: Buscar libro (Búsqueda exitosa)__
 
 El usuario ingresa 3 y busca un libro existente, como "SOBREDOSIS" (la búsqueda no distingue mayúsculas/minúsculas debido al uso de equalsIgnoreCase en Biblioteca.java).
 
@@ -169,7 +168,7 @@ AÑO DE PUBLICACION: 1990
 [4] Salir de la biblioteca
 > Ingrese una opción:
 
-#### 4) Opción 3: Buscar libro (Búsqueda fallida y manejo de excepción)
+__4) Opción 3: Buscar libro (Búsqueda fallida y manejo de excepción)__
 
 El usuario ingresa 3 y busca un libro inexistente, lo que dispara la excepción LibroNoEncontradoException.
 

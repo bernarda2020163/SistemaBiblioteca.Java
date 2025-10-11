@@ -14,7 +14,7 @@ El sistema se organiza en las siguientes clases para modelar los componentes de 
 
 #### Clase Libro
 
-*  Atributos: titulo (String), autor (String), añoPublicacion (int).
+*  Atributos: isbn (String) ,titulo (String), autor (String), añoPublicacion (int).
 
 *  Métodos: Constructor, getters y setters, y mostrarInfo() para mostrar los detalles del libro.
 
@@ -34,7 +34,11 @@ El sistema se organiza en las siguientes clases para modelar los componentes de 
 
 * agregarLibro(Libro libro): Añade un libro (físico o digital) a la lista de la biblioteca.
 
+* mostrarTodosLosLibros() : muestra todos los libros de la biblioteca con su informacion mediante el comportamiento (mostrarInfo() para mostrar los detalles del libro)
+
 * buscarLibro(String titulo): Busca un libro por su título.
+
+* borrarLibro(String titulo) : elimina un libro por titulo. 
 
 * Excepción Personalizada LibroNoEncontradoException
 

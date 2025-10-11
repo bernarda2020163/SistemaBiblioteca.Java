@@ -5,7 +5,7 @@
 
 📌 Requisitos:
 
-El repositorio de GitHub SistemaBiblioteca.Java contiene un Sistema de Gestión de Biblioteca simple desarrollado en Java, utilizando los principios de la Programación Orientada a Objetos (POO) y manejo de excepciones personalizadas.
+El repositorio de GitHub SistemaBiblioteca.Java contiene un Sistema de Gestión de Biblioteca simple desarrollado en Java, utilizando los principios de la Programación Orientada a Objetos (POO) con herencia, polimorfismo y manejo de excepciones personalizadas.
 
 Las funcionalidades y la estructura del programa son las siguientes:
 
@@ -46,18 +46,180 @@ El sistema está diseñado para realizar las siguientes operaciones mínimas de 
 * Creación de Libros	Permite crear al menos dos tipos de libros: uno normal (Libro) y uno digital (LibroDigital).
 * Gestión de Inventario	La clase Biblioteca permite agregar estos libros a su lista de inventario.
 * Búsqueda de Libros	Implementa la función de buscar un libro por su título.
+* Extra: eliminar libro por su titulo.
 * Manejo de Errores	Si el libro buscado no existe, el método buscarLibro lanza la excepción LibroNoEncontradoException. El programa principal debe capturar esta excepción y mostrar un mensaje claro al usuario (ej: "Libro no encontrado").
 
 Este proyecto educativo esta enfocado en aplicar conceptos básicos y esenciales de Java como POO (herencia, encapsulamiento) y manejo avanzado de excepciones para simular la gestión de un pequeño inventario bibliotecario.
 
 ### USO :
 
-1) Ejecutar la clase Main.java.
+1) Ejecutar la clase Main.java. Por defecto tiene cargado un inventario pequeño de 4 libros.
    
-2) Interactuar con el menú del Sistema de biblioteca. (agregarlibros, buscarlibros por titulo, revisar catalogo de libros , eliminar libro salir)
+2) Interactuar con el menú del Sistema de biblioteca. (agregarLibro, mostrarTodosLosLibros, buscarLibro , borrarLibro, salir)
    
 3) Validación de datos mediante excepciones personalizadas.
 
+A continuación se muestra un ejemplo de la ejecución del programa Main.java, que inicia la biblioteca, agrega algunos libros predefinidos y luego presenta un menú de opciones para interactuar con el sistema.
+
+### Ejecución de Ejemplo del Programa
+La ejecución comienza con la inicialización del sistema y la carga de los libros iniciales:
+
+#### 1 ) Inicio y Carga Inicial de Libros_:
+Se crean y agregan cuatro libros predefinidos (Sobredosis, Vida Sin Límites, Cien Años de Soledad, El Código Da Vinci) a la biblioteca.
+
+##### Salida de la Consola al Inicio:
+
+==== BIENVENIDO AL SISTEMA DE BIBLIOTECA ====
+
+--- Agregando libros a la Biblioteca ---
+El libro ha sido agregado: SOBREDOSIS
+El libro ha sido agregado: VIDA SIN LIMITES
+El libro ha sido agregado: CIEN AÑOS DE SOLEDAD
+El libro ha sido agregado: EL CÓDIGO DA VINCI
+
+-------- SISTEMA DE BIBLIOTECA ----------
+[1] Añadir libro
+[2] Mostrar libros disponibles
+[3] Buscar libro
+[4] Salir de la biblioteca
+> Ingrese una opción:
+
+#### 2) Opción 2: Mostrar libros disponibles
+
+El usuario ingresa 2 para ver el inventario.
+
+##### Entrada del Usuario: 2
+
+##### Salida de la Consola:
+
+--- Libros en la Biblioteca (4) ---
+
+Libro Libro: 
+ISBN: 9569961848 
+TITULO: SOBREDOSIS 
+AUTOR: ALBERTO FUGUET 
+AÑO DE PUBLICACION: 1990
+
+Libro LibroDigital: 
+ISBN: 9780307589750 
+TITULO: VIDA SIN LIMITES 
+AUTOR: NICK VUJICIC 
+AÑO DE PUBLICACION: 2010
+FORMATO DIGITAL: epub
+
+Libro Libro: 
+ISBN: 9789968411226  
+TITULO: CIEN AÑOS DE SOLEDAD 
+AUTOR: GABRIEL GARCÍA MÁRQUEZ 
+AÑO DE PUBLICACION: 1967
+
+Libro LibroDigital: 
+ISBN: 8482398725 
+TITULO: EL CÓDIGO DA VINCI 
+AUTOR: DAN BROWN 
+AÑO DE PUBLICACION: 2003
+FORMATO DIGITAL: PDF
+
+
+-------- SISTEMA DE BIBLIOTECA ----------
+[1] Añadir libro
+[2] Mostrar libros disponibles
+[3] Buscar libro
+[4] Salir de la biblioteca
+> Ingrese una opción:
+
+#### 3) Opción 3: Buscar libro (Búsqueda exitosa)
+
+El usuario ingresa 3 y busca un libro existente, como "SOBREDOSIS" (la búsqueda no distingue mayúsculas/minúsculas debido al uso de equalsIgnoreCase en Biblioteca.java).
+
+##### Entrada del Usuario: 3
+sobredosis
+
+##### Salida de la Consola:
+
+Ingrese el titulo del libro que necesita buscar : sobredosis
+
+--- Búsqueda del libro 'sobredosis' ---
+¡Búsqueda Exitosa! Información del libro encontrado:
+
+Libro Libro: 
+ISBN: 9569961848 
+TITULO: SOBREDOSIS 
+AUTOR: ALBERTO FUGUET 
+AÑO DE PUBLICACION: 1990
+
+
+-------- SISTEMA DE BIBLIOTECA ----------
+[1] Añadir libro
+[2] Mostrar libros disponibles
+[3] Buscar libro
+[4] Salir de la biblioteca
+> Ingrese una opción:
+
+#### 4) Opción 3: Buscar libro (Búsqueda fallida y manejo de excepción)
+
+El usuario ingresa 3 y busca un libro inexistente, lo que dispara la excepción LibroNoEncontradoException.
+
+##### Entrada del Usuario: 3
+Caballo de Troya
+
+##### Salida de la Consola:
+
+Ingrese el titulo del libro que necesita buscar : Caballo de Troya
+
+--- Búsqueda del libro 'Caballo de Troya' ---
+¡Error! La búsqueda falló para: Caballo de Troya
+Mensaje: El libro de titulo Caballo de Troya no ha sido encontrado en la biblioteca.
+
+
+-------- SISTEMA DE BIBLIOTECA ----------
+[1] Añadir libro
+[2] Mostrar libros disponibles
+[3] Buscar libro
+[4] Salir de la biblioteca
+> Ingrese una opción:
+
+#### 5) Opción 1: Añadir un nuevo libro (Recurso Electrónico)
+
+El usuario ingresa 1 para agregar un nuevo LibroDigital.
+
+##### Entrada del Usuario: 1
+1234567890123 (ISBN)
+Dune (título)
+Frank Herbert (autor)
+1965 (año de publicación)
+1 (opción para Recurso Electrónico)
+
+##### Salida de la Consola:
+
+Ingrese el ISBN del libro que desea insertar: 1234567890123
+Ingrese el título del libro que desea insertar: Dune
+Ingrese el nombre del autor del libro: Frank Herbert
+Ahora, ingrese el año de publicación del libro: 1965
+Finalmente, ingrese la opción de formato del libro:
+1. Recurso Electrónico
+2. Recurso Físico
+1
+El libro ha sido agregado: DUNE
+
+-------- SISTEMA DE BIBLIOTECA ----------
+[1] Añadir libro
+[2] Mostrar libros disponibles
+[3] Buscar libro
+[4] Salir de la biblioteca
+> Ingrese una opción:
+
+#### 6) Opción 4: Salir del programa
+
+##### El usuario ingresa 4.
+
+##### Entrada del Usuario: 4
+
+Salida de la Consola:
+
+¡Gracias por utilizar nuestros servicios!
+
+==== FIN DEL SISTEMA DE BIBLIOTECA====
 
  📖 Documentación web: 
 

@@ -85,11 +85,12 @@ Se crean y agregan cuatro libros predefinidos (Sobredosis, Vida Sin Límites, Ci
 
 ==== BIENVENIDO AL SISTEMA DE BIBLIOTECA ====
 
---- Agregando libros a la Biblioteca ---
+
+`````--- Agregando libros a la Biblioteca ---
 El libro ha sido agregado: SOBREDOSIS
 El libro ha sido agregado: VIDA SIN LIMITES
 El libro ha sido agregado: CIEN AÑOS DE SOLEDAD
-El libro ha sido agregado: EL CÓDIGO DA VINCI
+El libro ha sido agregado: EL CÓDIGO DA VINCI `````
 
 -------- SISTEMA DE BIBLIOTECA ----------
 [1] Añadir libro

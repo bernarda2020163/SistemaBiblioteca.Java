@@ -76,7 +76,7 @@ A continuación se muestra un ejemplo de la ejecución del programa Main.java, q
 ### Ejecución de Ejemplo del Programa
 La ejecución comienza con la inicialización del sistema y la carga de los libros iniciales:
 
-####1) Inicio y Carga Inicial de Libros:
+__1) Inicio y Carga Inicial de Libros__:
 Se crean y agregan cuatro libros predefinidos (Sobredosis, Vida Sin Límites, Cien Años de Soledad, El Código Da Vinci) a la biblioteca.
 
 ##### Salida de la Consola al Inicio:

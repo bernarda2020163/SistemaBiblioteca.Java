@@ -89,7 +89,7 @@ El libro ha sido agregado: VIDA SIN LIMITES
 El libro ha sido agregado: CIEN AÑOS DE SOLEDAD  
 El libro ha sido agregado: EL CÓDIGO DA VINCI   
 
--------- SISTEMA DE BIBLIOTECA ----------
+-------- SISTEMA DE BIBLIOTECA ----------  
 [1] Añadir libro  
 [2] Mostrar libros disponibles  
 [3] Buscar libro  
@@ -133,7 +133,7 @@ AÑO DE PUBLICACION: 2003
 FORMATO DIGITAL: PDF  
 
 
--------- SISTEMA DE BIBLIOTECA ----------
+-------- SISTEMA DE BIBLIOTECA ----------  
 [1] Añadir libro  
 [2] Mostrar libros disponibles  
 [3] Buscar libro  
@@ -151,22 +151,22 @@ sobredosis
 
 Ingrese el titulo del libro que necesita buscar : sobredosis
 
---- Búsqueda del libro 'sobredosis' ---
+--- Búsqueda del libro 'sobredosis' ---  
 ¡Búsqueda Exitosa! Información del libro encontrado:
 
-Libro Libro: 
-ISBN: 9569961848 
-TITULO: SOBREDOSIS 
-AUTOR: ALBERTO FUGUET 
-AÑO DE PUBLICACION: 1990
+Libro Libro:   
+ISBN: 9569961848   
+TITULO: SOBREDOSIS   
+AUTOR: ALBERTO FUGUET   
+AÑO DE PUBLICACION: 1990  
 
 
--------- SISTEMA DE BIBLIOTECA ----------
-[1] Añadir libro
-[2] Mostrar libros disponibles
-[3] Buscar libro
-[4] Salir de la biblioteca
-> Ingrese una opción:
+-------- SISTEMA DE BIBLIOTECA ----------  
+[1] Añadir libro  
+[2] Mostrar libros disponibles  
+[3] Buscar libro  
+[4] Salir de la biblioteca  
+> Ingrese una opción:  
 
 __4) Opción 3: Buscar libro (Búsqueda fallida y manejo de excepción)__
 
@@ -179,47 +179,47 @@ Caballo de Troya
 
 Ingrese el titulo del libro que necesita buscar : Caballo de Troya
 
---- Búsqueda del libro 'Caballo de Troya' ---
-¡Error! La búsqueda falló para: Caballo de Troya
-Mensaje: El libro de titulo Caballo de Troya no ha sido encontrado en la biblioteca.
+--- Búsqueda del libro 'Caballo de Troya' ---  
+¡Error! La búsqueda falló para: Caballo de Troya  
+Mensaje: El libro de titulo Caballo de Troya no ha sido encontrado en la biblioteca.  
 
 
--------- SISTEMA DE BIBLIOTECA ----------
-[1] Añadir libro
-[2] Mostrar libros disponibles
-[3] Buscar libro
-[4] Salir de la biblioteca
-> Ingrese una opción:
+-------- SISTEMA DE BIBLIOTECA ----------  
+[1] Añadir libro  
+[2] Mostrar libros disponibles  
+[3] Buscar libro  
+[4] Salir de la biblioteca  
+> Ingrese una opción:  
 
 #### 5) Opción 1: Añadir un nuevo libro (Recurso Electrónico)
 
 El usuario ingresa 1 para agregar un nuevo LibroDigital.
 
-##### Entrada del Usuario: 1
-1234567890123 (ISBN)
-Dune (título)
-Frank Herbert (autor)
-1965 (año de publicación)
-1 (opción para Recurso Electrónico)
+##### Entrada del Usuario: 1  
+1234567890123 (ISBN)  
+Dune (título)  
+Frank Herbert (autor)  
+1965 (año de publicación)  
+1 (opción para Recurso Electrónico)  
 
-##### Salida de la Consola:
+##### Salida de la Consola: 
 
-Ingrese el ISBN del libro que desea insertar: 1234567890123
-Ingrese el título del libro que desea insertar: Dune
-Ingrese el nombre del autor del libro: Frank Herbert
-Ahora, ingrese el año de publicación del libro: 1965
-Finalmente, ingrese la opción de formato del libro:
-1. Recurso Electrónico
-2. Recurso Físico
+Ingrese el ISBN del libro que desea insertar: 1234567890123  
+Ingrese el título del libro que desea insertar: Dune  
+Ingrese el nombre del autor del libro: Frank Herbert  
+Ahora, ingrese el año de publicación del libro: 1965  
+Finalmente, ingrese la opción de formato del libro:  
+1. Recurso Electrónico  
+2. Recurso Físico  
 1
-El libro ha sido agregado: DUNE
+El libro ha sido agregado: DUNE  
 
--------- SISTEMA DE BIBLIOTECA ----------
-[1] Añadir libro
-[2] Mostrar libros disponibles
-[3] Buscar libro
-[4] Salir de la biblioteca
-> Ingrese una opción:
+-------- SISTEMA DE BIBLIOTECA ----------  
+[1] Añadir libro  
+[2] Mostrar libros disponibles  
+[3] Buscar libro  
+[4] Salir de la biblioteca  
+> Ingrese una opción:  
 
 #### 6) Opción 4: Salir del programa
 
@@ -227,7 +227,7 @@ El libro ha sido agregado: DUNE
 
 ##### Entrada del Usuario: 4
 
-Salida de la Consola:
+##### Salida de la Consola:
 
 ¡Gracias por utilizar nuestros servicios!
 

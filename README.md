@@ -95,9 +95,9 @@ El libro ha sido agregado: EL CÓDIGO DA VINCI
 [2] Mostrar libros disponibles
 [3] Buscar libro
 [4] Salir de la biblioteca
-> Ingrese una opción:
+> Ingrese una opción:  `````
 
-#### 2) Opción 2: Mostrar libros disponibles
+__2) Opción 2 Mostrar libros disponibles__:
 
 El usuario ingresa 2 para ver el inventario.
 

@@ -69,6 +69,30 @@ public class Biblioteca {
             libro.mostrarInfo();
         }
     }
+    //EXTRAS: Eliminar libro
+
+    public void borrarLibro(String titulo)
+            throws LibroNoEncontradoException {
+
+        boolean borrado = false;
+
+        for (int i = 0; i < listaLibros.size(); i++) {
+            if (listaLibros.get(i).getTitulo().equalsIgnoreCase(titulo)) {
+                listaLibros.remove(i);
+                borrado = true;
+                break;
+            }
+        }
+        if (!borrado) {
+            throw new LibroNoEncontradoException("No se encuentra registrado el libro con el título: " + titulo);
+        }
+        else{
+            System.out.println("El siguiente libro ha sido eliminado: " + titulo);
+            System.out.println("Libros disponibles:");
+            mostrarTodosLosLibros();
+        }
+    }
+
 
 }
 

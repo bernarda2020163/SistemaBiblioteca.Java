@@ -1,14 +1,11 @@
 package latinasincloud;
 
 import latinasincloud.exception.LibroNoEncontradoException;
+import java.util.Scanner;
+
 import latinasincloud.model.Biblioteca;
 import latinasincloud.model.Libro;
 import latinasincloud.model.LibroDigital;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
-import java.util.concurrent.TransferQueue;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -86,76 +83,93 @@ public class Main {
             // para errores y para parsear el ingreso de la opcion en entero con la limpieza de buffer
             try {
                 opcion = Integer.parseInt(sc.nextLine());
-            switch (opcion) {
-                case 1:
-                    System.out.print("Ingrese el ISBN del libro que desea insertar: ");
-                    String isbn = sc.nextLine();
+                switch (opcion) {
+                    case 1:
+                        System.out.print("Ingrese el ISBN del libro que desea insertar: ");
+                        String isbn = sc.nextLine();
 
-                    System.out.print("Ingrese el título del libro que desea insertar: ");
-                    String titulo = sc.nextLine();
+                        System.out.print("Ingrese el título del libro que desea insertar: ");
+                        String titulo = sc.nextLine();
 
-                    System.out.print("Ingrese el nombre del autor del libro: ");
-                    String autor = sc.nextLine();
+                        System.out.print("Ingrese el nombre del autor del libro: ");
+                        String autor = sc.nextLine();
 
-                    System.out.print("Ahora, ingrese el año de publicación del libro: ");
-                    int publicacion = sc.nextInt();
-                    sc.nextLine();
+                        System.out.print("Ahora, ingrese el año de publicación del libro: ");
+                        int publicacion = sc.nextInt();
+                        sc.nextLine();
 
-                    System.out.println("Finalmente, ingrese la opción de formato del libro:");
-                    System.out.println("1. Recurso Electrónico");
-                    System.out.println("2. Recurso Físico");
+                        System.out.println("Finalmente, ingrese la opción de formato del libro:");
+                        System.out.println("1. Recurso Electrónico");
+                        System.out.println("2. Recurso Físico");
 
-                    int opcionRecurso;
-                    opcionRecurso = sc.nextInt();
-                    sc.nextLine(); // Dejamos el nextLine() si después vamos a leer Strings
+                        int opcionRecurso;
+                        opcionRecurso = sc.nextInt();
+                        sc.nextLine(); // Dejamos el nextLine() si después vamos a leer Strings
 
-                    if (opcionRecurso == 1) {
-                        String formato = "Recurso Electrónico";
-                        miBiblioteca.agregarLibro(new LibroDigital(isbn, titulo, autor, publicacion, formato));
-                    } else {
-                        miBiblioteca.agregarLibro(new Libro(isbn, titulo, autor, publicacion));
-                    }
-                    break;
-                case 2:
-                    miBiblioteca.mostrarTodosLosLibros();
-                    System.out.println(" ");
-                    break;
-                case 3:
-                    // -----------------------------------------------------------------
-                    // --- 3. Buscar y manejar la excepción ----------------------------
-                    // -----------------------------------------------------------------
+                        if (opcionRecurso == 1) {
+                            String formato;
+                            System.out.println("Ingrese el formato del libro (EPUB, PDF, MOBI, AZW):");
+                            formato = sc.nextLine();
+                            miBiblioteca.agregarLibro(new LibroDigital(isbn, titulo, autor, publicacion, formato));
+                        } else {
+                            miBiblioteca.agregarLibro(new Libro(isbn, titulo, autor, publicacion));
+                        }
+                        break;
+                    case 2:
+                        miBiblioteca.mostrarTodosLosLibros();
+                        System.out.println(" ");
+                        break;
+                    case 3:
+                        // -----------------------------------------------------------------
+                        // --- 3. Buscar y manejar la excepción ----------------------------
+                        // -----------------------------------------------------------------
 
-                    //
-                   System.out.print("Ingrese el titulo del libro que necesita buscar : ");
-                    titulo = sc.nextLine();
+                        //
+                        System.out.print("Ingrese el titulo del libro que necesita buscar: ");
+                        titulo = sc.nextLine();
 
-                    System.out.println("\n--- Búsqueda del libro '" + titulo + "' ---");
-                    try {
-                        Libro encontrado = miBiblioteca.buscarLibro(titulo);
-                        System.out.println("¡Búsqueda Exitosa! Información del libro encontrado:");
-                        encontrado.mostrarInfo();
-                    } catch (LibroNoEncontradoException e) {
-                        System.err.println("¡Error! La búsqueda falló para: " + titulo);
-                        System.err.println("Mensaje: " + e.getMessage());
-                    }
-                    System.out.println("  ");
-                    break;
-                case 4:
-                    System.out.println("¡Gracias por utilizar nuestros servicios!");
-                    break;
-                default:
-                    System.out.println("Opción incorrecta. Vuelva a intentar.");
-            }
+                        System.out.println("\n--- Búsqueda del libro '" + titulo + "' ---");
+                        try {
+                            Libro encontrado = miBiblioteca.buscarLibro(titulo);
+                            System.out.println("¡Búsqueda Exitosa! Información del libro encontrado:");
+                            encontrado.mostrarInfo();
+                        } catch (LibroNoEncontradoException e) {
+                            System.err.println("¡Error! La búsqueda falló para: " + titulo);
+                            System.err.println("Mensaje: " + e.getMessage());
+                        }
+                        System.out.println("  ");
+                        break;
+                    case 4:
+                        System.out.print("Ingrese el titulo del libro que necesite eliminar del sistema: ");
+                        titulo = sc.nextLine();
+
+                        System.out.println("\n--- Búsqueda del libro a eliminar '" + titulo + "' ---");
+                        try {
+                            Libro encontrado = miBiblioteca.buscarLibro(titulo);
+                            System.out.println("¡Búsqueda Exitosa! Información del libro a eliminar:");
+                            encontrado.mostrarInfo();
+                            miBiblioteca.borrarLibro(titulo);
+                        } catch (LibroNoEncontradoException e) {
+                            System.err.println("¡Error! El libro no se encuentra registrado");
+                            System.err.println("Mensaje: " + e.getMessage());
+                        }
+                        System.out.println("  ");
+                        break;
+                    case 5:
+                        System.out.println("¡Gracias por utilizar nuestros servicios!");
+                        break;
+                    default:
+                        System.out.println("Opción incorrecta. Vuelva a intentar.");
+                }
             } catch (NumberFormatException e) { //por si ingresa una letra o palabra
                 System.out.println("Entrada no válida. Por favor, ingrese un número.");
                 opcion = 0; // Para que el bucle continúe
             }
-        } while (opcion != 4);
+        } while (opcion != 5);
         sc.close();//buena práctica para ahorrar recursos
 
         System.out.println("\n==== FIN DEL SISTEMA DE BIBLIOTECA====");
     }
-
 
 
     // definiendo método menú de opciones Sistema de Gestión de Biblioteca
@@ -164,10 +178,10 @@ public class Main {
         System.out.println("[1] Añadir libro");
         System.out.println("[2] Mostrar libros disponibles");
         System.out.println("[3] Buscar libro");
-        System.out.println("[4] Salir de la biblioteca");
+        System.out.println("[4] Eliminar libro");
+        System.out.println("[5] Salir de la biblioteca");
         System.out.println("> Ingrese una opción:");
-        }
-
-
-
     }
+
+
+}

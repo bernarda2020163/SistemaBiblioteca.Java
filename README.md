@@ -55,7 +55,7 @@ El sistema está diseñado para realizar las siguientes operaciones mínimas de 
 
 Este proyecto educativo esta enfocado en aplicar conceptos básicos y esenciales de Java como POO (herencia, encapsulamiento) y manejo avanzado de excepciones para simular la gestión de un pequeño inventario bibliotecario.
 
- 📖 Documentación web: 
+  ### Documentación web 📖: 
 
   ISBN (Número Estándar Internacional de Libro) es un código único de 13 dígitos que identifica un libro y su edición específica a nivel mundial, permitiendo su localización y gestión en catálogos y sistemas de ventas. Este código codifica información sobre el país,
   la editorial y el título del libro, y es esencial para la producción, circulación y comercialización editorial de una publicación.
